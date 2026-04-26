@@ -1,37 +1,70 @@
-## 📋 Descripción
-<!-- Describe brevemente qué hace este PR y por qué es necesario -->
+## Description
+
+<!-- Clearly and concisely explain what this PR changes, the context behind it, and why it is needed. -->
 
 
-## 🔗 Issue relacionado
-<!-- Enlaza el issue que resuelve este PR -->
+
+## Related Issue
+
+<!-- Link the related issue, ticket, or task. -->
+
 Closes #
 
-## 🧪 Tipo de cambio
-<!-- Marca con una X las opciones que apliquen -->
-- [ ] 🐛 Bug fix
-- [ ] ✨ Nueva funcionalidad
-- [ ] 💥 Breaking change
-- [ ] 📝 Documentación
-- [ ] 🎨 Refactor / estilo de código
-- [ ] ⚡ Mejora de performance
-- [ ] 🔧 Configuración / CI/CD
-
-## 📸 Capturas / Videos
-<!-- Si aplica, agrega capturas de pantalla o videos -->
 
 
-## ✅ Checklist
-- [ ] Hice self-review de mi propio código
-- [ ] Mis cambios no generan nuevos warnings
-- [ ] Agregué o actualicé tests
-- [ ] Los tests pasan localmente
-- [ ] Actualicé la documentación si fue necesario
+## Type of Change
 
-## 🚀 ¿Cómo probar?
-<!-- Pasos para que el reviewer pueda probar los cambios -->
+<!-- Mark the options that apply with an X. -->
+
+- [ ] Bug fix
+- [ ] New feature
+- [ ] Breaking change
+- [ ] Documentation
+- [ ] Refactor / code improvement
+- [ ] Performance improvement
+- [ ] Configuration / CI/CD
+- [ ] Other
+
+
+
+## Key Changes
+
+<!-- Summarize the most relevant changes included in this PR. -->
+
+- 
+- 
+- 
+
+
+
+## Screenshots / Videos
+
+<!-- Add visual evidence if the change affects the UI or visible product behavior. -->
+
+
+
+## How to Test
+
+<!-- Describe the steps required to validate the changes. Include test data, users, permissions, or special configuration if applicable. -->
+
 1. 
 2. 
 3. 
 
-## 📝 Notas para el reviewer
-<!-- Cualquier contexto adicional que el reviewer deba saber -->
+
+
+## Checklist
+
+- [ ] I performed a self-review of my changes
+- [ ] I verified that no new warnings or errors were introduced
+- [ ] I added or updated tests where applicable
+- [ ] I confirmed that the relevant tests pass locally
+- [ ] I updated documentation, environment variables, or configuration when needed
+- [ ] I validated the main flows and relevant edge cases
+
+
+
+## Notes for Reviewers
+
+<!-- Include technical decisions, trade-offs, known risks, areas that need special attention, or any additional context for reviewers. -->
+
