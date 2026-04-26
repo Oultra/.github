@@ -1,0 +1,34 @@
+name: Create default branches on repo init
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  create-branches:
+    runs-on: ubuntu-latest
+    # Solo correr si es el primer commit (el repo acaba de inicializarse)
+    if: github.event.created == true || github.run_number == 1
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Create default branches
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          for branch in dev staging qa; do
+            if git ls-remote --heads origin $branch | grep -q $branch; then
+              echo "Branch $branch already exists, skipping."
+            else
+              git checkout -b $branch
+              git push origin $branch
+              git checkout main
+              echo "Branch $branch created."
+            fi
+          done
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
